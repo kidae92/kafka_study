@@ -1,0 +1,55 @@
+1. kafka server
+cd kafka
+./bin/zookeeper-server-start.sh config/zookeeper.properties &
+./bin/kafka-server-start.sh config/server.properties &
+sudo netstat -anp | egrep "9092|2181"
+bin/kafka-topics.sh --create --topic icns --partitions 3 --replication-factor 1 --bootstrap-server localhost:9092  &
+bin/kafka-topics.sh --list --bootstrap-server localhost:9092
+./bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic twitter --from-beginning
+
+2. kafka producer
+bin/kafka-console-producer.sh --topic twitter --bootstrap-server KafkaServerIP:9092
+
+3. zookeeper 확인
+./zookeeper-shell.sh ZookeeperServer:2181
+
+
+input {
+
+twitter {
+consumer_key => ""
+consumer_secret => ""
+oauth_token => ""
+oauth_token_secret => ""
+keywords => ["news","game","bigdata","부동산"]
+full_tweet => true
+}
+}
+output{
+stdout{
+codec => rubydebug
+}
+}
+
+
+
+input {
+
+twitter {
+consumer_key => ""
+consumer_secret => ""
+oauth_token => ""
+oauth_token_secret => ""
+keywords => ["news","game","bigdata","부동산"]
+full_tweet => true
+}
+}
+
+output {
+kafka {
+bootstrap_servers => "160:9092"
+codec => json{}
+acks => "1"
+topic_id => "twitter"
+}
+}
