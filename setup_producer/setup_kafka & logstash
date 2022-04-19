@@ -80,7 +80,7 @@ batch 개수 : -b, --pipeline.batch.siz
   -Dcom.sun.management.jmxremote.ssl=false
   -Dcom.sun.management.jmxremote.port=9998
   -Dcom.sun.management.jmxremote.rmi.port=9998
-  -Djava.rmi.server.hostname=34.64.36.131'
+  -Djava.rmi.server.hostname=broker-01 ip'
 
 ## thread 1개, batch size 1개로 데이터를 kafka로 전송
 > ~/logstash-7.15.0/bin/logstash -w 1 -b 1 -f ~/logstash_conf/producer.conf
