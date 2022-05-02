@@ -61,6 +61,5 @@ cmak.zkhosts="broker-01:2181"
 # STEP 3. GCP 방화벽 허용 PORT 추가 
 - CMAK에 접속하기 위한 9000 PORT 허용
 
-
 # STEP 4. Web Browser로 접속
 - http://<VM IP>:9000
