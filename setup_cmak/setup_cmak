@@ -44,7 +44,6 @@ cmak-3.0.0.5.zip  scripts
 > sudo yum install -y unzip
 > unzip target/universal/cmak-3.0.0.5.zip
 ```
-
 # STEP 2.CMAK 실행
 ```
 ## 현재 디렉토리에 압축해제된 디렉토리(cmak-3.0.0.5) 확인한다. 
