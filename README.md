@@ -1,5 +1,6 @@
 # 🌈 Kafka-akhq & Kafka-ELK stack 구축해보기
-🟥 jconsole
+🟥 ## jconsole
+
 Jconsole이란 실행중인 자바 프로세스를 모니터링 할 수 있는 툴이다. Kafka를 실행하기 위해선 Java를 설치해아 한다.
 JDK에 포함되어 있습니다 파일의 위치는 jdk가 설치된 폴더내에 bin 폴더에 들어있다.
 
