@@ -1,7 +1,6 @@
-## STEP 0. Connect to vm server using ssh
-- "broker-01" 서버로 접속한 후, 아래의 명령어를 순서대로 실행한다.
+## STEP1 - "broker-01" 서버로 접속한 후, 아래의 명령어를 순서대로 실행한다.
 
-## STEP1. Install the apache kafka 2.8.0 on gcp vm instance
+
 
 ### Java 설치 및 JAVA_HOME 설정
 ```
