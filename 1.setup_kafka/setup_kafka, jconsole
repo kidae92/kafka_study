@@ -73,7 +73,7 @@ advertised.listeners=PLAINTEXT://broker-01:9092
 > env JMX_PORT=9999 bin/kafka-server-start.sh -daemon config/server.properties
 ```
 
-#### Create a topic(kafka-mon)
+#### Create a topic(kafka-hong)
 ```
 > cd ~/kafka_2.12-2.8.0
 > bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --topic kafka-mon \
